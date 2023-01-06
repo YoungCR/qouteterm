@@ -10,7 +10,7 @@ function newQuote() {
     const quoteText = document.getElementById("quote");
     const quoteAuthor = document.getElementById("quote-author");
   
-    fetch(`http://api.quotable.io/quotes?page=${apiPage}`)
+    fetch(`https://api.quotable.io/quotes?page=${apiPage}`)
       .then(response => response.json())
       .then(data => {
   
